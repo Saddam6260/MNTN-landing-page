@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$pera-size: 1.3vw;
+$heading-one: 2.3vw;
+
+h1, h2, h3, h4, h5, h6, p, li, span{
+    font-weight: bold;
+    color: white;
+}
+header {
+    min-height: 55px;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #be3144;
+    font-size: 16px;
+
+    .logo{
+        width: 27vw;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        height: 100%;
+
+        h3{
+            max-width: 150px;
+            font-size: 2.3vw;;
+        }
+    }
+    .top-navber{
+
+        ul{
+            list-style-type: none;
+            width: 40vw;
+            height: 100%;
+            display: flex;
+            flex-flow: row;
+            margin-bottom: 0px;
+            justify-content: space-around;
+
+            li{
+                padding: 0px 15px;
+                font-size: 1.3vw;
+            }
+        }
+    }
+    .account{
+        width: 27vw;
+        text-align: end;
+        font-size: 1.3vw;
+    }
+}
+
+#main-section{
+    background-color: #758388;
+    padding: 100px 50px;
+    position: relative;
+
+    .leftside-nav{
+        width: 27vw;
+
+        ul{
+            list-style-type: none;
+            padding-left: 0px;
+
+            li{
+                padding: 5px 0px;
+            }
+            
+            .rotate{
+                transform: rotate(90deg);
+                position: absolute;
+            }
+    }
+
+}
+    .hiking-guide{
+        width: 35vw;
+
+        p{
+            font-size: $pera-size;
+            color: #fbd784;
+        }
+        h1{
+            font-size: $heading-one;
+        }
+    }
+    .rightside-nav{
+        width: 27vw;
+        text-align: end;
+        list-style: none;
+
+        ul{
+            text-align: end;
+            list-style-type: none;
+
+            li{
+                padding: 10px 0px;
+            }
+        }
+    }
+}
+
+#container{
+    max-width: 1100px;
+    width: 100%;
+    margin: 50px 0px;
+
+    #what-level{
+            width: 100%;
+        .what-level-text{
+            width: 60%;
+            padding: 0px 60px;
+
+            h2{
+                font-size: $heading-one;
+            }
+
+            p{
+                font-size: $pera-size;
+            }
+
+            .top-p{
+                color: #fbd784;
+                font-size: $pera-size;
+            }
+
+            .read-more{
+                color: #fbd784;
+                font-size: $pera-size;
+
+                span{
+                    color: #fbd784;
+                }
+
+
+
+            }
+        }
+        .what-level-img{
+            width: 40%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.footer-heading{
+
+    h3{
+        font-size: $heading-one;
+        color: #fbd784;
+    }
+    p{
+        font-size: $pera-size;
+    }
+}
+
+#footer-nav {
+
+    ul{
+        list-style-type: none;
+        padding: 0px;
+
+        li{
+            padding: 7px 0px;
+            font-size: $pera-size;
+
+            span{
+                color: #fbd784;
+                font-size: 1.4vw;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width:576px) {
+    #container{
+        width: 100%;
+        #what-level{
+            width: 100%;
+
+            .what-level-img{
+                width: 100%;
+                padding: 0px 50px;
+            }
+            .what-level-text{
+                width: 100%;
+                padding-bottom: 50px;
+            }
+            .hikink-gear-text{
+                padding-top: 50px;
+            }
+        }
+    }
+}
