@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,144 +7,166 @@
 $pera-size: 1.3vw;
 $heading-one: 2.3vw;
 
-h1, h2, h3, h4, h5, h6, p, li, span{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+span {
     font-weight: bold;
     color: white;
 }
 header {
-    min-height: 55px;
-    padding: 0px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #be3144;
-    font-size: 16px;
-
-    .logo{
-        width: 27vw;
+    .container {
+        max-width: 1720px;
+        min-height: 55px;
+        padding: 0px 40px;
         display: flex;
-        flex-flow: row wrap;
+        justify-content: space-between;
         align-items: center;
-        height: 100%;
+        // background-color: #be3144;
+        font-size: 16px;
 
-        h3{
-            max-width: 150px;
-            font-size: 2.3vw;;
-        }
-    }
-    .top-navber{
-
-        ul{
-            list-style-type: none;
-            width: 40vw;
-            height: 100%;
+        .logo {
+            width: 27vw;
             display: flex;
-            flex-flow: row;
-            margin-bottom: 0px;
-            justify-content: space-around;
+            flex-flow: row wrap;
+            align-items: center;
+            height: 100%;
 
-            li{
-                padding: 0px 15px;
-                font-size: 1.3vw;
+            h3 {
+                max-width: 150px;
+                font-size: 2.3vw;
             }
         }
-    }
-    .account{
-        width: 27vw;
-        text-align: end;
-        font-size: 1.3vw;
-    }
-}
+        .top-navber {
+            ul {
+                list-style-type: none;
+                width: 40vw;
+                height: 100%;
+                display: flex;
+                flex-flow: row;
+                margin-bottom: 0px;
+                justify-content: space-around;
 
-#main-section{
-    background-color: #758388;
-    padding: 100px 50px;
-    position: relative;
-
-    .leftside-nav{
-        width: 27vw;
-
-        ul{
-            list-style-type: none;
-            padding-left: 0px;
-
-            li{
-                padding: 5px 0px;
+                li {
+                    padding: 0px 15px;
+                    font-size: 1.3vw;
+                }
             }
-            
-            .rotate{
-                transform: rotate(90deg);
-                position: absolute;
-            }
-    }
-
-}
-    .hiking-guide{
-        width: 35vw;
-
-        p{
-            font-size: $pera-size;
-            color: #fbd784;
         }
-        h1{
-            font-size: $heading-one;
-        }
-    }
-    .rightside-nav{
-        width: 27vw;
-        text-align: end;
-        list-style: none;
-
-        ul{
+        .account {
+            width: 27vw;
             text-align: end;
-            list-style-type: none;
+            font-size: 1.3vw;
+        }
+    }
+}
 
-            li{
-                padding: 10px 0px;
+#main-section {
+    .container {
+        // background-color: #758388;
+        padding: 100px 50px;
+        position: relative;
+
+        .leftside-nav {
+            width: 27vw;
+
+            ul {
+                list-style-type: none;
+                padding-left: 0px;
+                width: 25px;
+
+                li {
+                    padding: 5px 0px;
+                }
+
+                .rotate {
+                    height: 100px;
+                    p {
+                        // transform: rotate(90deg);
+                        margin-bottom: 0px!important;
+                        width: 150px;
+                        transform-origin: center left;
+                    }
+                    // position: absolute;
+                }
+            }
+        }
+        .hiking-guide {
+            width: 35vw;
+
+            p {
+                font-size: $pera-size;
+                color: #fbd784;
+            }
+            h1 {
+                font-size: $heading-one;
+            }
+        }
+        .rightside-nav {
+            width: 27vw;
+            text-align: end;
+            list-style: none;
+
+            ul {
+                text-align: end;
+                list-style-type: none;
+
+                li {
+                    padding: 10px 0px;
+                }
             }
         }
     }
 }
 
-#container{
+#header_main_wrap {
+    background: transparent url("../img/main-background-img.png") no-repeat
+        center center;
+    background-size: cover;
+    height: 1690px;
+}
+
+#container {
     max-width: 1100px;
     width: 100%;
     margin: 50px 0px;
 
-    #what-level{
-            width: 100%;
-        .what-level-text{
+    #what-level {
+        width: 100%;
+        .what-level-text {
             width: 60%;
             padding: 0px 60px;
 
-            h2{
+            h2 {
                 font-size: $heading-one;
             }
 
-            p{
+            p {
                 font-size: $pera-size;
             }
 
-            .top-p{
+            .top-p {
                 color: #fbd784;
                 font-size: $pera-size;
             }
 
-            .read-more{
+            .read-more {
                 color: #fbd784;
                 font-size: $pera-size;
 
-                span{
+                span {
                     color: #fbd784;
                 }
-
-
-
             }
         }
-        .what-level-img{
+        .what-level-img {
             width: 40%;
-            img{
+            img {
                 width: 100%;
                 height: 100%;
             }
@@ -152,51 +174,48 @@ header {
     }
 }
 
-.footer-heading{
-
-    h3{
+.footer-heading {
+    h3 {
         font-size: $heading-one;
         color: #fbd784;
     }
-    p{
+    p {
         font-size: $pera-size;
     }
 }
 
 #footer-nav {
-
-    ul{
+    ul {
         list-style-type: none;
         padding: 0px;
 
-        li{
+        li {
             padding: 7px 0px;
             font-size: $pera-size;
 
-            span{
+            span {
                 color: #fbd784;
                 font-size: 1.4vw;
             }
         }
-
     }
 }
 
-@media only screen and (max-width:576px) {
-    #container{
+@media only screen and (max-width: 576px) {
+    #container {
         width: 100%;
-        #what-level{
+        #what-level {
             width: 100%;
 
-            .what-level-img{
+            .what-level-img {
                 width: 100%;
                 padding: 0px 50px;
             }
-            .what-level-text{
+            .what-level-text {
                 width: 100%;
                 padding-bottom: 50px;
             }
-            .hikink-gear-text{
+            .hikink-gear-text {
                 padding-top: 50px;
             }
         }

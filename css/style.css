@@ -4,32 +4,40 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, li, span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+span {
   font-weight: bold;
   color: white;
 }
 
-header {
+header .container {
+  max-width: 1720px;
   min-height: 55px;
   padding: 0px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #be3144;
   font-size: 16px;
 }
-header .logo {
+header .container .logo {
   width: 27vw;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   height: 100%;
 }
-header .logo h3 {
+header .container .logo h3 {
   max-width: 150px;
   font-size: 2.3vw;
 }
-header .top-navber ul {
+header .container .top-navber ul {
   list-style-type: none;
   width: 40vw;
   height: 100%;
@@ -38,56 +46,66 @@ header .top-navber ul {
   margin-bottom: 0px;
   justify-content: space-around;
 }
-header .top-navber ul li {
+header .container .top-navber ul li {
   padding: 0px 15px;
   font-size: 1.3vw;
 }
-header .account {
+header .container .account {
   width: 27vw;
   text-align: end;
   font-size: 1.3vw;
 }
 
-#main-section {
-  background-color: #758388;
+#main-section .container {
   padding: 100px 50px;
   position: relative;
 }
-#main-section .leftside-nav {
+#main-section .container .leftside-nav {
   width: 27vw;
 }
-#main-section .leftside-nav ul {
+#main-section .container .leftside-nav ul {
   list-style-type: none;
   padding-left: 0px;
+  width: 25px;
 }
-#main-section .leftside-nav ul li {
+#main-section .container .leftside-nav ul li {
   padding: 5px 0px;
 }
-#main-section .leftside-nav ul .rotate {
-  transform: rotate(90deg);
-  position: absolute;
+#main-section .container .leftside-nav ul .rotate {
+  height: 100px;
 }
-#main-section .hiking-guide {
+#main-section .container .leftside-nav ul .rotate p {
+  margin-bottom: 0px !important;
+  width: 150px;
+  transform-origin: center left;
+}
+#main-section .container .hiking-guide {
   width: 35vw;
 }
-#main-section .hiking-guide p {
+#main-section .container .hiking-guide p {
   font-size: 1.3vw;
   color: #fbd784;
 }
-#main-section .hiking-guide h1 {
+#main-section .container .hiking-guide h1 {
   font-size: 2.3vw;
 }
-#main-section .rightside-nav {
+#main-section .container .rightside-nav {
   width: 27vw;
   text-align: end;
   list-style: none;
 }
-#main-section .rightside-nav ul {
+#main-section .container .rightside-nav ul {
   text-align: end;
   list-style-type: none;
 }
-#main-section .rightside-nav ul li {
+#main-section .container .rightside-nav ul li {
   padding: 10px 0px;
+}
+
+#header_main_wrap {
+  background: transparent url("../img/main-background-img.png") no-repeat center center;
+  background-size: cover;
+  height: 1690px;
 }
 
 #container {
